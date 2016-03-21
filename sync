@@ -1,0 +1,2 @@
+#!/bin/sh
+rsync -av /Volumes/pictures/*.nef ~/pine-cone # syncrhonize the files from the teathered machine
