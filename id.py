@@ -59,12 +59,11 @@ def identify(input_fn, id_output):
     process = subprocess.Popen(cmd, stdout = f)
     out, err = process.communicate()
     f.close()
-    exit()
 
-tiffs  = get_files(root, ".tiff")
-ids = get_files(root, ".tiff.id")
+tiffs  = get_files("800x530", ".tiff")
+ids    = get_files("800x530", ".tiff.id")
 
 for tiff, dir, fn in tiffs:
-    idname = "%s.id" % tiff 
-    if (idname not in ids):
+    idname = "%s.id" % tiff
+    if (idname not in [id[0] for id in ids]):
         identify(tiff, idname)

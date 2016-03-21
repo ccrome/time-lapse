@@ -9,5 +9,6 @@ cmd = ["ffmpeg",
        "-r", "%s" % fps,
        "-s", resolution,
        "-vcodec", "libx264",
+       "-pix_fmt", "yuv420p",
        "a.mp4"]
 subprocess.call(cmd)
