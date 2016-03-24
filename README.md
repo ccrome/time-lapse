@@ -2,10 +2,8 @@
 
 This will be a collection of scripts that I use for processing a time lapse.  Likely not interesting to anybody but me.
 
-## Code Example
+Makefile:  a few line of makefile that do what many lines of python did.  why not do things the simple way?
 
-rsync -av /Volumes/pictures/*.nef ~/pine-cone # syncrhonize the files from the teathered machine
-miniturize.py -- given a bunch of .nef (raw) files, convert them to small versions of themselves.
-id.py -- create json .id files of the miniturized files
-deflicker.py
-encode.py -- encode the files into an mp4.
+# make sync  
+# make
+
